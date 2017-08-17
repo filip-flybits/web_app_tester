@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WebAppTester</string>
+    <string name="label_enterurl">Enter URL:</string>
+    <string name="hint_url">URL</string>
+    <string name="label_btnLaunch">Launch</string>
+    <string name="label_nummessages">%1$d callback messages received</string>
+</resources>
