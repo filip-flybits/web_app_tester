@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-<item android:id="@+id/menu_main_refresh" app:showAsAction="always" android:title="Refresh" android:icon="@drawable/ic_refresh_white_24dp" />
+
+    <item android:id="@+id/menu_main_refresh" app:showAsAction="always" android:title="Refresh" android:icon="@drawable/ic_refresh_white_24dp" />
+    <item android:id="@+id/menu_main_test_androidtojs" app:showAsAction="always" android:title="Test Droid2JS" android:icon="@drawable/ic_code_white_24dp" />
+
 </menu>

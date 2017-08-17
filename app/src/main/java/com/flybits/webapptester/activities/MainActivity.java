@@ -147,6 +147,13 @@ public class MainActivity extends AppCompatActivity {
                 txtNumMessages.setText(getResources().getString(R.string.label_nummessages, messages.size()));
                 adapter.notifyDataSetChanged();
                 return true;
+            case R.id.menu_main_test_androidtojs:
+                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.KITKAT) {
+                    webWebView.evaluateJavascript("parseNativeAppMessage('{\"message\":\"Hello from Android!\"}');", null);
+                } else {
+                    webWebView.loadUrl("javascript:parseNativeAppMessage('{\"message\":\"Hello from Android!\"}');");
+                }
+                return true;
         }
         return false;
     }
