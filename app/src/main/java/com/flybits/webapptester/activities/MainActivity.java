@@ -149,9 +149,9 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             case R.id.menu_main_test_androidtojs:
                 if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.KITKAT) {
-                    webWebView.evaluateJavascript("parseMessageFromNativeApp('{\"message\":\"Hello from Android!\"}');", null);
+                webWebView.evaluateJavascript("App.parseMessageFromNativeApp('{\"type\":\"data\",\"subtype\":\"message\",\"body\":{\"message\":{\"en\":\"Hello from Native App!\",\"fr\":\"Bonjour from Native App!\"}}}');", null);
                 } else {
-                    webWebView.loadUrl("javascript:parseMessageFromNativeApp('{\"message\":\"Hello from Android!\"}');");
+                webWebView.loadUrl("javascript:App.parseMessageFromNativeApp('{\"type\":\"data\",\"subtype\":\"message\",\"body\":{\"message\":{\"en\":\"Hello from Native App!\",\"fr\":\"Bonjour from Native App!\"}}}');");
                 }
                 return true;
         }
